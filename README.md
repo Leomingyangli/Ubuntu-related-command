@@ -2,8 +2,12 @@
 ## Create ubuntu user
 ```
 sudo adduser username
-sudo usermod -aG sudo rui # add user to sudo group
-grep -Po '^sudo.+:\K.*$' /etc/group # list users in sudo group
+
+# add user to sudo group
+sudo usermod -aG sudo rui 
+
+# list users in sudo group
+grep -Po '^sudo.+:\K.*$' /etc/group 
 ```
 
 ## Check CPU configuration
