@@ -4,7 +4,7 @@
 sudo adduser username
 
 # add user to sudo group
-sudo usermod -aG sudo rui 
+sudo usermod -aG sudo username
 
 # list users in sudo group
 grep -Po '^sudo.+:\K.*$' /etc/group 
@@ -25,7 +25,7 @@ cat /proc/cpuinfo |grep "processor"|wc -l
 cat /proc/cpuinfo |grep "cores"|uniq 
 ```
 
-## check ubuntu version and GPU information
+## Check ubuntu version and GPU information
 ```
 lsb_release -a
 nvidia-smi
