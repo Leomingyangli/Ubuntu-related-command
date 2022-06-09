@@ -14,10 +14,13 @@ grep -Po '^sudo.+:\K.*$' /etc/group
 ```
 htop
 lscpu
+
 #check pysical cpu
 cat /proc/cpuinfo |grep "physical id"|sort |uniq|wc -l 
+
 # check logical cpu
 cat /proc/cpuinfo |grep "processor"|wc -l 
+
 # check cores in each cpu
 cat /proc/cpuinfo |grep "cores"|uniq 
 ```
